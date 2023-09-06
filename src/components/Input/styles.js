@@ -13,7 +13,6 @@ export const Container = styled.div`
     > h2 {
         font-size: 15px;
         margin-left: 10px;
-        color: red;
     }
 
 

@@ -8,6 +8,8 @@ import React, { useState } from "react";
 export default function Home() {
     const [file, setFile] = useState();
     const [formData, setFormData] = useState([]);
+    const [product_code, setCode] = useState("");
+    const [new_price, setNewPrice] = useState("");
 
     const fileReader = new FileReader();
 
@@ -57,6 +59,10 @@ export default function Home() {
       };
 
 
+      function handleSubmit() {
+        console.log(product_code, new_price)
+      }
+
     return (
         <Container>
          <Header />
@@ -85,7 +91,7 @@ export default function Home() {
              {formData.length > 0 && (
               <div>
                {formData.map((data, rowIndex) => (
-                <div class="display" key={rowIndex}>
+                <div className="display" key={rowIndex}>
                 {Object.keys(data).map((key) => (
                 <Input
                   title={key}
@@ -99,7 +105,7 @@ export default function Home() {
               ))}
               </div>
             ))}
-            <Button title="Verificar"/> 
+            <Button title="Verificar" onClick={handleSubmit}/> 
             </div>
             )}
             </Section>   
