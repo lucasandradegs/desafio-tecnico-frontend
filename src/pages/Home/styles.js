@@ -15,6 +15,7 @@ export const Container = styled.div`
         grid-area: content;
         overflow-y: auto;
         padding: 64px 0;
+
     }
 `;
 
@@ -24,14 +25,18 @@ export const Content = styled.div`
     justify-content: center;
     flex-direction: column;
     
-    > div {
-        display: flex;
-        flex-direction: column;
+    .display {
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     > h1 {
         margin-bottom: 40px;
     }
+
+
 `;
 
 export const Form = styled.form`

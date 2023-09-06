@@ -85,7 +85,7 @@ export default function Home() {
              {formData.length > 0 && (
               <div>
                {formData.map((data, rowIndex) => (
-                <div key={rowIndex}>
+                <div class="display" key={rowIndex}>
                 {Object.keys(data).map((key) => (
                 <Input
                   title={key}

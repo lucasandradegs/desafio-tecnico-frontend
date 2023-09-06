@@ -12,14 +12,17 @@ export const Container = styled.div`
 
     > h2 {
         font-size: 15px;
+        margin-left: 10px;
+        color: red;
     }
 
 
     > input {
         height: 56px;
         width: 100%;
-        padding: 12px;
+        padding: 15px;
         color: ${({theme}) => theme.COLORS.TEXT};
+        
 
         background: transparent;
         border: 0;
@@ -28,6 +31,7 @@ export const Container = styled.div`
             color: ${({theme}) => theme.COLORS.WHITE};
         }
     }
+
 
     svg {
         margin-left: 16px;
