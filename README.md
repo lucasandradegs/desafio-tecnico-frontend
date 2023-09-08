@@ -1,10 +1,29 @@
-# React + Vite
+# Frontend para Atualização de Preços
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend do desafio técnico. O sistema deve ser capaz de ter uma opção de subir uma planilha no site, para fins de atualização de preços dos produtos.
 
-Currently, two official plugins are available:
+## Configuração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Siga as etapas abaixo para configurar e executar o projeto localmente:
 
+1. Clone este repositório em sua máquina:
 
+   ```bash
+   git clone https://github.com/lucasandradegs/desafio-tecnico-frontend.git
+
+2. Instale as dependências:
+ 
+ - npm install
+
+3. Execute o servidor:
+
+ - npm run dev
+
+# Uso
+Para utilizar a aplicação:
+
+ - Envie a planilha contendo as atualizações de preços através do site.
+
+ - A aplicação processará a planilha, validará os dados e, se tudo estiver correto, enviará as atualizações para o backend.
+
+ - O backend realizará validações adicionais e, se todas as condições forem atendidas, atualizará os preços no banco de dados.
